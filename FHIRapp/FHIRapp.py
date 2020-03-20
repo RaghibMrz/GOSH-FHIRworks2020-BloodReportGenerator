@@ -6,6 +6,7 @@ from docGenerator import generateHealthDoc
 root = tk.Tk()
 
 
+# gets patient data and displays relevant buttons and labels on tkinter frame
 def printer():
     uid = inp.get()
     try:
@@ -42,4 +43,5 @@ label = tk.Label(root, text="")
 genButton = tk.Button()
 canvas.mainloop()
 
+# Test ID:
 # e3d4ce63-c4c0-4dd2-ab9b-6cc3e43f0e25

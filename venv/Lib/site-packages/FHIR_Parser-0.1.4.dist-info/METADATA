@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: FHIR-Parser
+Version: 0.1.4
+Summary: An elegant and simple FHIR library for Python, built for human beings
+Home-page: https://github.com/greenfrogs/FHIR-Parser
+Author: Greenfrogs
+Author-email: 5961364+greenfrogs@users.noreply.github.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.23.0)
+Requires-Dist: python-dateutil (>=2.8.1)
+
+FHIR Parser
+=======================================
+**FHIR Parser** is an elegant and simple FHIR library for Python, built for human beings.
+
+
+[![CircleCI](https://circleci.com/gh/greenfrogs/FHIR-Parser.svg?style=svg&circle-token=a3f7a6daaa0540154190ba8de23f91950ff4d4c2)](https://circleci.com/gh/greenfrogs/FHIR-Parser)
+[![Documentation Status](https://readthedocs.org/projects/fhir-parser/badge/?version=latest)](https://fhir-parser.readthedocs.io/en/latest/?badge=latest)
+
+-------------------
+
+**The power of the FHIR Parser**::
+
+    >> fhir = FHIR('https://localhost:5001/api/', verify_ssl=false)
+    >> patient = fhir.get_patient('8f789d0b-3145-4cf2-8504-13159edaa747')
+    >> patient.full_name
+    'Ms. Abby752 Beatty507'
+    >> patient.marital_status
+    'Never Married'
+    >> patient.age()
+    21.514
+
+    >> observation = fhir.get_observation('4a064229-2a40-45f4-a259-f4eedcfd525a')
+    >> observation.type
+    'vital-signs'
+    >> observation.components[1].display
+    'Diastolic Blood Pressure'
+    >> observation.components[1].quantity()
+    '76.0 mm[Hg]'
+

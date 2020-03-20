@@ -12,3 +12,9 @@ Finally, go into the "FHIR_API" directory and the run the commands:
 - "python manage.py runserver"
 
 The API should now be running on your localhost:8000
+
+Test patientID:
+- e3d4ce63-c4c0-4dd2-ab9b-6cc3e43f0e25
+
+Demo video:
+- https://youtu.be/s6AJ6hTTDx0

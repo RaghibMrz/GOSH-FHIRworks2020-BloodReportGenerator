@@ -2,6 +2,9 @@ import docx
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
 
+### This is not a runnable app, but merely an auxiliary file I created for better grouping of the code
+
+
 # takes a patient's ordered information and writes it into the given document neatly
 def writeList(title, mainBody, dictionary):
     mainBody.add_run(title + ": \n").bold = True

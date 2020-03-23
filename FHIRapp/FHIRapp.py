@@ -6,6 +6,8 @@ from docGenerator import generateHealthDoc
 root = tk.Tk()
 
 
+### This is the runnable application
+
 # gets patient data and displays relevant buttons and labels on tkinter frame
 def printer():
     uid = inp.get()
@@ -45,3 +47,5 @@ canvas.mainloop()
 
 # Test ID:
 # e3d4ce63-c4c0-4dd2-ab9b-6cc3e43f0e25
+# b9f1a32d-39c8-473b-ad98-2aff11813ec1
+# ac529235-6fbc-48f0-a3fa-de7f1924d497
